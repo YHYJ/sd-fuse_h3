@@ -58,7 +58,7 @@ if [ $# -eq 2 ]; then
 	RAW_FILE=$2
     case ${TARGET_OS} in
     friendlycore-xenial_4.14_armhf)
-        RAW_SIZE_MB=7800 ;;
+        RAW_SIZE_MB=2500 ;;
     friendlywrt_4.14_armhf)
         RAW_SIZE_MB=640 ;;
     eflasher)
@@ -70,7 +70,7 @@ else
 	case ${TARGET_OS} in
 	friendlycore-xenial_4.14_armhf)
 		RAW_FILE=${SOC}_sd_friendlycore-xenial_4.14_armhf-$(date +%Y%m%d).img
-		RAW_SIZE_MB=7800 ;;
+		RAW_SIZE_MB=2500 ;;
 	friendlywrt_4.14_armhf)
 		RAW_FILE=${SOC}_sd_friendlywrt_4.14_armhf-$(date +%Y%m%d).img
 		RAW_SIZE_MB=640 ;;
