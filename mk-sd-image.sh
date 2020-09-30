@@ -62,7 +62,7 @@ if [ $# -eq 2 ]; then
     friendlywrt_4.14_armhf)
         RAW_SIZE_MB=640 ;;
     eflasher)
-        RAW_SIZE_MB=7800 ;;
+        RAW_SIZE_MB=3600 ;;
     *)
         RAW_SIZE_MB=7800 ;;
     esac
@@ -76,7 +76,7 @@ else
 		RAW_SIZE_MB=640 ;;
 	eflasher)
 		RAW_FILE=${SOC}_eflasher-$(date +%Y%m%d).img
-		RAW_SIZE_MB=7800 ;;
+		RAW_SIZE_MB=3600 ;;
 	*)
 		RAW_FILE=${SOC}_sd_${TARGET_OS}-$(date +%Y%m%d).img
 		RAW_SIZE_MB=7800 ;;
